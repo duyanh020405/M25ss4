@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Bt1 from "./baiTap/Bt1";
+import ViDu from "./ViDu/page";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <Bt1></Bt1>
+        <ViDu></ViDu>
 
       </body>
     </html>
